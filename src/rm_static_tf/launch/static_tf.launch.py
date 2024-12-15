@@ -17,7 +17,7 @@ def generate_launch_description():
     base_link_to_livox_frame= Node(
         package="tf2_ros",
         executable="static_transform_publisher",
-        arguments=['0','0','0','0','0','0','base_link','camera_init'],
+        arguments=['0','0','0','0','0','0','base_link','livox_frame'],
         name="base_link_to_livox_frame"
     )
 

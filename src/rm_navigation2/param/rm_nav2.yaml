@@ -5,7 +5,7 @@ amcl:
     alpha2: 0.0001
     alpha3: 0.0001
     alpha4: 0.0001
-    alpha5: 0.0001
+    alpha5: 0.1
     base_frame_id: "base_link" #机器人的基础坐标系，通常是 base_link。
     beam_skip_distance: 0.5 #当机器人在激光雷达探测范围内有多个激光束时，激光束之间的距离小于这个值时，激光束会被跳过。
     beam_skip_error_threshold: 0.9 #当激光束被跳过时，激光束之间的距离大于这个值时，激光束会被认为是错误的。

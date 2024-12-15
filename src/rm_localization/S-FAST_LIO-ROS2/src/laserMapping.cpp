@@ -14,7 +14,7 @@ void LaserMapping::initLIO() {
     pubLaserCloudFull_body = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_registered_body", 20);
     pubLaserCloudEffect = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_effected", 20);
     pubLaserCloudMap = this->create_publisher<sensor_msgs::msg::PointCloud2>("/Laser_map", 20);
-    pubOdomAftMapped = this->create_publisher<nav_msgs::msg::Odometry>("/Odometry", 20);
+    pubOdomAftMapped = this->create_publisher<nav_msgs::msg::Odometry>("/odom", 20);
     pubPath = this->create_publisher<nav_msgs::msg::Path>("/path", 20);
     path.header.stamp = this->get_clock()->now();
     path.header.frame_id = "odom";

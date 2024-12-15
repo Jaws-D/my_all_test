@@ -10,7 +10,7 @@ public:
   {
     // 创建一个订阅者，订阅"odom"话题的nav_msgs::msg::Odometry类型消息
     odom_subscribe_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "odom", rclcpp::SensorDataQoS(),
+      "/odom", rclcpp::SensorDataQoS(),
       std::bind(&TopicSubscribe01::odom_callback, this, std::placeholders::_1));
 
     // 创建一个tf2_ros::TransformBroadcaster用于广播坐标变换
